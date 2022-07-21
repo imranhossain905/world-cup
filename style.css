@@ -48,7 +48,7 @@
 .left-text p {
     font-size: 16px;
     line-height: 26px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .btn {
     text-decoration: none;
@@ -57,8 +57,8 @@
     border-radius: 5px;
     padding:16px 25px ;
     
-
 }
+ 
 .btn-ineer {
     align-items: center;
     gap: 20px;
@@ -76,6 +76,11 @@
     display: flex;
     gap: 24px;
     
+}
+.btn-view {
+    margin-top: 70px;
+    text-align: center;
+    display: none;
 }
 .width-25 {
    width: 252px;  
@@ -96,11 +101,11 @@
 }
 .btn.match:hover {
     color:#FFFFFF ;
-    background-color:#DD0000 ;
+    background-color:#e599ac ;
 }
 .btn.other {
-    background-color: #DD0000;
-   color: white;
+    background-color: #86cbdc;
+    color: white;
     text-align: center;
 }
 .width-75 {
@@ -122,6 +127,8 @@
     margin-bottom: 20px;
 }
 .fetcher-detail h4 {
+    font-size: 20px;
+    line-height: 30px;
     margin-bottom: 10px;
 }
 .blog-card {
@@ -131,7 +138,7 @@
     margin-bottom: -8px;
 }
 img.blog-pic {
-    border-radius: 10px 10px 0px 0px;.
+    border-radius: 10px 10px 0px 0px;
     width: 100%;
 }
 .blog-detail {
@@ -182,8 +189,12 @@ button {
 }
 .menu-bar{
     display: flex;
+    gap: 25px;
     align-items: center;
     justify-content: center;
+    max-width: 896px;
+    margin-left: auto;
+    margin-right: auto;
     color: white;
     text-decoration: none;
     margin-bottom: 40px;
@@ -192,13 +203,14 @@ button {
 .menu-bar a {
     color: #B9B9B9;
     text-decoration: none;
-    padding: 5px 30px;
+    padding: 5px 5px;
 
 }
 .social-media {
-display: flex;
-gap: 20px;
-justify-content: center;
+    display: flex;
+    font-size: 30px;
+    gap: 25px;
+    justify-content: center;
 }
 .social-link {
     color: white;
@@ -206,7 +218,125 @@ justify-content: center;
 
  /* media styles tab screen */
 
-@media screen and(max-width-768px){
+   /* media styles Tablet screen */
+@media screen and (max-width:992px) {
+    .section {
+        padding: 70px 0px;
+    }
+    .top-banner {
+        padding: 60px 20px 60px 76px;
+    }
+    .top-banner h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .left-text p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+    }
+    .side-image {
+        width: 323px;
+    }
+    .side-image:hover {
+        width: 400px;
+        height: 400px;
+    }
+    .mid-banner {
+        display: block;
+        gap: 24px;
+    }
+    .width-25 {
+        width: 100%;
+    }
+    .side-bar {
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+        padding: 30px 0px;
+    }
+    .btn.match {
+        border: 1px solid #E8E8E8;
+    }
+    .width-75 {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .blog-detail h3 {
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+    .blog-card:nth-last-child(1) {
+        display: none;
     
-    
+    }
+    .btn-view {
+        margin-top: 70px;
+        text-align: center;
+        display: block;
+    }
+    .menu-bar {
+        flex-wrap: wrap;
+        max-width: 635px;
+
+    }
+
 }
+
+    
+
+ /* media styles Mobile phone screen */
+@media screen and (max-width: 576px) {
+    .section {
+        padding: 24px 0px;
+    }
+    .section-top {
+        padding-top: 44px;
+    }
+    
+    .container.top-container {
+        padding: 0 20px;
+    }
+    
+    .top-banner {
+        padding: 28px 38px 0px 38px;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    
+    .hulf-width {
+        width: 100%;
+    }
+
+    
+    .left-text {
+        max-width: 258px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 0px;
+    }
+    .top-banner h1 {
+        font-size: 22px;
+        line-height: 33px;
+    }
+    .side-bar {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 210px;
+        margin: 0 auto;
+    }
+    
+    .width-75 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .btn-view {
+        display: none;
+    }
+    .menu-bar {
+        flex-direction: column;
+    }
+    
+    }
